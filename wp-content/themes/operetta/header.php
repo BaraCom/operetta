@@ -7,54 +7,32 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Alegreya:400,400i,700,700i|Cinzel|Mogra|Raleway:400,400i,700,700i|Slabo+27px|Vollkorn:400,400i,700,700i" rel="stylesheet">
 </head>
 <body <?php body_class(); ?> >
 
-<?php /*if(ale_get_option('sitelogo')){
-    echo "<img src='".ale_get_option('sitelogo')."' />";
-}*/ ?>
-<?php ale_option('sitelogo'); ?>
+    <header class="wrapper">
+        <div class="main_header">
+            <div class="header_third header_left">
+                social
+            </div>
+            <div class="header_third header_logo">
+                <a href="<?php echo home_url("/"); ?>" class="logo_link">
+                    <img src=" <?php echo ale_get_option('sitelogo'); ?>" />
+                </a>
+            </div>
+            <div class="header_third header_quote">
+                <p class="header_paragraph">
+                    <span class="quote">&#8220;</span> professionals </br>
+                    for you <span class="quote">&#8221;</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper">
+        <div class="body">
+            <div class="body_nav">
 
-<section class="slider-example">
-	<div class="newhomeslider wrapper">
-		<ul class="slides">
-			<?php $slider = ale_sliders_get_slider('test-slider');  ?>
-			<?php if($slider):?>
-				<?php foreach ($slider['slides'] as $slide) : ?>
-					<li>
-						<figure>
-							<img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" />
-							<figcaption>
-								<div class="sliderdata">
-									<?php if($slide['title']){ ?>
-										<div class="titleslide headerfont">
-											<?php if($slide['url']){
-												echo "<a href='".$slide['url']."'>";
-											} ?>
-
-											<?php echo $slide['title']; ?>
-
-											<?php if($slide['url']){
-												echo "</a>";
-											} ?>
-										</div>
-									<?php } ?>
-									<?php if($slide['description']){ ?>
-										<div class="descriptionslide">
-											<?php echo $slide['description']; ?>
-										</div>
-									<?php } ?>
-									<?php if($slide['html']){ ?>
-										<div class="descriptionslide">
-											<?php echo $slide['html']; ?>
-										</div>
-									<?php } ?>
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-				<?php endforeach; ?>
-			<?php endif;?>
-		</ul>
-	</div>
-</section>
+            </div>
+        </div>
+    </section>

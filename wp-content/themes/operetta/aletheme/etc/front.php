@@ -40,17 +40,10 @@ add_action('wp_print_scripts', 'ale_init_js_vars');
 function ale_enqueue_styles() {
 
 	// add general css file
-	wp_register_style( 'aletheme_general_css', THEME_URL . '/css/general.css', array(), ALETHEME_THEME_VERSION, 'all');
-    wp_register_style( 'jquery.jscrollpane', THEME_URL . '/css/jquery.jscrollpane.css', array(), ALETHEME_THEME_VERSION, 'all');
-    wp_register_style( 'jquery.fancybox-1.3.4', THEME_URL . '/css/jquery.fancybox-1.3.4.css', array(), ALETHEME_THEME_VERSION, 'all');
+	wp_register_style( 'aletheme_general_css', THEME_URL . '/css/general.css', array(), ALETHEME_THEME_VERSION,'all');
+	wp_register_style( 'aletheme_fontawesome', THEME_URL . '/css/font-awesome.min.css', array(), ALETHEME_THEME_VERSION,'all');
     wp_enqueue_style('aletheme_general_css');
-
-    if(is_page_template('template-about.php') or is_page_template('template-award.php')){
-        wp_enqueue_style('jquery.jscrollpane');
-    }
-    if(is_page_template('template-press.php')){
-        wp_enqueue_style('jquery.fancybox-1.3.4');
-    }
+    wp_enqueue_style('aletheme_fontawesome');
 }
 add_action( 'wp_enqueue_scripts', 'ale_enqueue_styles' );
 
