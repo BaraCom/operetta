@@ -8,6 +8,26 @@ if (isset($_POST['contact'])) {
 }
 get_header();
 ?>
+
+<nav class="wrapper">
+    <div class="liner_menu">
+        <?php
+        if (has_nav_menu('body_menu')) {
+            wp_nav_menu(array(
+                'theme_location' => 'body_menu',
+                'menu'           => 'Body Menu',
+                'menu_class'     => 'ale_bodymenu cv',
+                'walker'         => new Aletheme_Nav_Walker(),
+                'container'      => '',
+            ));
+        }
+        ?>
+    </div>
+</nav>
+
+
+
+
     <!-- Content -->
     <div class="contacts-center">
         <div class="content">

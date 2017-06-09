@@ -20,6 +20,24 @@ Header Styles
     width: 33.3%;
     float: left;
 
+    .header_social {
+      font-size: 25px;
+      margin: 40px 0px 0px 40px;
+
+      a {
+        color: #353535;
+        display: inline-block;
+        margin-right: 8px;
+        .transition(all 300ms ease-in-out);
+
+        &:hover {
+          color: #541515;
+          text-shadow: 0px 3px 3px #1F1F1F;
+          .transition(all 300ms ease-in-out);
+        }
+      }
+    }
+
     &.header_logo {
       text-align: center;
       line-height: 250px;
@@ -29,7 +47,7 @@ Header Styles
 
       .header_paragraph {
         color: #848282;
-        font-family: "slabo";
+        font-family: 'Crimson Text', serif;
         font-size: 24px;
         margin: 170px 0px 0px 115px;
 
@@ -40,7 +58,137 @@ Header Styles
     }
   }
 }
+
+/*
+Home-Page styles
+*/
+
 .body {
   background: #282828;
-  height: 550px;
+  min-height: 550px;
+
+  .nav {
+    width: 415px;
+    min-height: 310px;
+    margin: 0px auto;
+    padding-top: 100px;
+
+    .menu-item {
+      border: 1px solid transparent;
+      -moz-border-image: -moz-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
+      -webkit-border-image: -webkit-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
+      border-image: linear-gradient(to right, #282828 0%, #ff0000 50%, #282828 100%);
+      border-image-slice: 1;
+      font-size: 29px;
+      margin-top: 4px;
+      min-height: 75px;
+      text-align: center;
+
+      a {
+        color: #828181;
+        line-height: 75px;
+        text-transform: uppercase;
+
+        &:hover {
+          background: linear-gradient(90deg, #5f1616 0%, #e72929 50%, #5f1616 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          .transition(all 300ms ease-in-out);
+        }
+      }
+    }
+  }
+
+  .nav_bottom_image {
+    background-image: url("img/nav_bottom_image.png");
+    margin: 35px auto 0px auto;
+    height: 41px;
+    width: 56px;
+  }
+}
+
+/*
+Contacts Page styles
+*/
+
+nav.wrapper {
+  .liner_menu {
+    min-height: 80px;
+
+    .ale_bodymenu {
+      text-align: center;
+
+      li {
+        color: #474646;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 80px;
+        margin: 0px 20px 0px 20px;
+        position: relative;
+        text-transform: uppercase;
+
+        &:before {
+          content: "\f111";
+          color: #4d0000;
+          font: normal normal normal 4px/1 FontAwesome;
+          margin: -2px 0px 0px -22px;
+          position: absolute;
+          top: 50%;
+        }
+
+        &:last-child {
+          &::after {
+            content: "\f111";
+            color: #4d0000;
+            font: normal normal normal 4px/1 FontAwesome;
+            margin: -2px 0px 0px 20px;
+            position: absolute;
+            top: 50%;
+          }
+        }
+
+        a {
+          color: inherit;
+
+          &:hover {
+            border-bottom: 1px solid transparent;
+            border-top: 1px solid transparent;
+            -moz-border-image: -moz-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
+            -webkit-border-image: -webkit-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
+            border-image: linear-gradient(to right, #282828 0%, #ff0000 50%, #282828 100%);
+            border-image-slice: 1;
+
+            background: linear-gradient(90deg, #5f1616 0%, #e72929 50%, #5f1616 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            .transition(all 300ms ease-in-out);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+Footer styles
+ */
+
+.main_footer {
+  //background: #282828;
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #282828 0%, #d8d5d5 50%, #282828 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #282828 0%, #d8d5d5 50%, #282828 100%);
+  border-image: linear-gradient(to right, #282828 0%, #d8d5d5 50%, #282828 100%);
+  border-image-slice: 1;
+  height: 80px;
+
+  .footer_copyrights {
+    p {
+      color: #343434;
+      font-family: Arial, "Times New Roman", "Bitstream Charter", Times, serif;
+      font-size: 18px;
+      line-height: 80px;
+      text-align: center;
+    }
+  }
 }

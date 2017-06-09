@@ -2,6 +2,7 @@
 $ale_background = ale_get_option('background');
 $ale_headerfont = ale_get_option('headerfont');
 $ale_mainfont = ale_get_option('mainfont');
+$ale_secondfont = ale_get_option('secondfont');
 $ale_font = ale_get_option('bodystyle');
 $ale_h1 = ale_get_option('h1sty');
 $ale_h2 = ale_get_option('h2sty');

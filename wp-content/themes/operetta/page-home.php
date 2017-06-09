@@ -3,54 +3,29 @@
   * Template name: Home
   * */
 get_header();
+?>
 
- if(ale_get_meta('descr1')){
-     echo ale_get_meta('descr1');
- }
+<section class="wrapper">
+    <main class="body">
+        <nav class="nav">
+            <?php
+                if (has_nav_menu('body_menu')) {
+                    wp_nav_menu(array(
+                        'theme_location' => 'body_menu',
+                        'menu'           => 'Body Menu',
+                        'menu_class'     => 'ale_bodymenu cv',
+                        'walker'         => new Aletheme_Nav_Walker(),
+                        'container'      => '',
+                    ));
+                }
+            ?>
+        </nav>
+        <div class="nav_bottom_image">
 
-echo "Home page";
-
-$custom_query = new WP_Query( array( 'post_type' => 'services','posts_per_page'=>'1' ) );
-
-if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
-    <div class="h2" ><?php the_title(); ?></div>
-    <div class="contact-content">
-        <?php the_content(); ?>
-    </div>
-<?php endwhile; endif; ?>
-
-
-<h1>Пагинация для Галерей</h1>
-<section>
-    <?php //global $query_string; query_posts($query_string.'&posts_per_page=3');
-
-    if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
-    elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
-    else { $paged = 1; }
-
-
-    $custom_query = new WP_Query(array('post_type'=>'gallery','posts_per_page'=>'3','paged'=>$paged));
-
-
-   ?>
-    <?php if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
-        <!-- Item -->
-        <div>
-            <a href="<?php the_permalink(); ?>">
-                <?php the_title(); ?>
-            </a>
-            <div class="portfolio-text">
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <p class="by">by <?php the_author(); ?></p>
-                <div class="text">
-                    <?php echo ale_trim_excerpt(15); ?>
-                </div>
-            </div>
         </div>
-    <?php endwhile;  endif;  ?>
+    </main>
 </section>
 
-<div class="pagination"><?php ale_page_links_custom($custom_query); ?></div>
-
-<?php get_footer();
-
+<?php
+get_footer();
+?>

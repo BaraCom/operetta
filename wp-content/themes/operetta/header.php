@@ -7,14 +7,23 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Alegreya:400,400i,700,700i|Cinzel|Mogra|Raleway:400,400i,700,700i|Slabo+27px|Vollkorn:400,400i,700,700i" rel="stylesheet">
 </head>
 <body <?php body_class(); ?> >
 
     <header class="wrapper">
         <div class="main_header">
-            <div class="header_third header_left">
-                social
+            <div class="header_third">
+                <div class="header_social">
+                    <?php if(ale_get_option('insta')) { ?><a href="<?php echo ale_get_option('insta') ?> ">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a><?php } ?>
+                    <?php if(ale_get_option('twi')) { ?><a href="<?php echo ale_get_option('twi') ?>" >
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </a><?php } ?>
+                    <?php if(ale_get_option('fb')) { ?><a href="<?php echo ale_get_option('fb') ?>" >
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        </a><?php } ?>
+                </div>
             </div>
             <div class="header_third header_logo">
                 <a href="<?php echo home_url("/"); ?>" class="logo_link">
@@ -29,10 +38,3 @@
             </div>
         </div>
     </header>
-    <section class="wrapper">
-        <div class="body">
-            <div class="body_nav">
-
-            </div>
-        </div>
-    </section>
