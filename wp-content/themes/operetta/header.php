@@ -7,6 +7,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Vollkorn" rel="stylesheet">
 </head>
 <body <?php body_class(); ?> >
 
@@ -33,7 +34,7 @@
             <div class="header_third header_quote">
                 <p class="header_paragraph">
                     <span class="quote">&#8220;</span> professionals </br>
-                    for you <span class="quote">&#8221;</span>
+                    <span class="for_you">for you</span><span class="quote">&#8221;</span>
                 </p>
             </div>
         </div>

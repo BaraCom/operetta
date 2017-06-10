@@ -603,6 +603,9 @@ Header Styles
 .main_header .header_third.header_quote .header_paragraph .quote {
   color: #800000;
 }
+.main_header .header_third.header_quote .header_paragraph .for_you {
+  margin-left: 90px;
+}
 /*
 Home-Page styles
 */
@@ -651,13 +654,13 @@ Home-Page styles
 /*
 Contacts Page styles
 */
-nav.wrapper .liner_menu {
+nav.liner_menu {
   min-height: 80px;
 }
-nav.wrapper .liner_menu .ale_bodymenu {
+nav.liner_menu .ale_bodymenu {
   text-align: center;
 }
-nav.wrapper .liner_menu .ale_bodymenu li {
+nav.liner_menu .ale_bodymenu li {
   color: #474646;
   display: inline-block;
   font-size: 24px;
@@ -666,7 +669,7 @@ nav.wrapper .liner_menu .ale_bodymenu li {
   position: relative;
   text-transform: uppercase;
 }
-nav.wrapper .liner_menu .ale_bodymenu li:before {
+nav.liner_menu .ale_bodymenu li:before {
   content: "\f111";
   color: #4d0000;
   font: normal normal normal 4px/1 FontAwesome;
@@ -674,7 +677,7 @@ nav.wrapper .liner_menu .ale_bodymenu li:before {
   position: absolute;
   top: 50%;
 }
-nav.wrapper .liner_menu .ale_bodymenu li:last-child::after {
+nav.liner_menu .ale_bodymenu li:last-child::after {
   content: "\f111";
   color: #4d0000;
   font: normal normal normal 4px/1 FontAwesome;
@@ -682,10 +685,10 @@ nav.wrapper .liner_menu .ale_bodymenu li:last-child::after {
   position: absolute;
   top: 50%;
 }
-nav.wrapper .liner_menu .ale_bodymenu li a {
+nav.liner_menu .ale_bodymenu li a {
   color: inherit;
 }
-nav.wrapper .liner_menu .ale_bodymenu li a:hover {
+nav.liner_menu .ale_bodymenu li a:hover {
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
   -moz-border-image: -moz-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
@@ -700,6 +703,171 @@ nav.wrapper .liner_menu .ale_bodymenu li a:hover {
   -ms-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+}
+.container {
+  margin-top: 65px;
+}
+.container p.title_parag {
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container p.title_parag:before {
+  color: #830d0d;
+  content: "\f068";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin: 14px 0px 0px -22px;
+  position: absolute;
+}
+.container p.title_parag:after {
+  color: #830d0d;
+  content: "\f068";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin: 14px 0px 0px 9px;
+  position: absolute;
+}
+.container p.title_parag a.page_title {
+  background: linear-gradient(90deg, #757474 0%, #e6e5e5 50%, #757474 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Vollkorn', serif;
+}
+.container p.title_parag a.page_title:hover {
+  cursor: default;
+}
+.container .page_content {
+  text-align: center;
+}
+.container .page_content p {
+  color: #ffffff;
+  font-family: 'Vollkorn', serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 22px;
+}
+.container .contacts_data {
+  margin: 70px 0px 5px 0px;
+}
+.container .contacts_data .parts {
+  color: #9b9b9b;
+  font-family: 'Vollkorn', serif;
+  font-size: 17px;
+  float: left;
+  width: 50%;
+}
+.container .contacts_data .parts .cont_parag {
+  margin: 0px 0px -10px 0px;
+  text-align: center;
+}
+.container .contacts_data .parts .cont_parag.number {
+  margin-left: -43px;
+}
+.container .contacts_data .parts .cont_parag.mail {
+  margin-top: 5px;
+}
+.container .contacts_data .parts .cont_parag span.label {
+  color: #434242;
+  font-size: 25px;
+}
+.container .contacts_data .parts .cont_parag span.value {
+  margin-left: 8px;
+}
+.container .contacts_data .parts .cont_parag span.value a {
+  color: #9b9b9b;
+}
+.container .contacts_data .parts.contacts_social {
+  margin-top: 15px;
+  text-align: center;
+}
+.container .contacts_data .parts.contacts_social a {
+  color: #353535;
+  display: inline-block;
+  font-size: 35px;
+  margin-right: 12px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.container .contacts_data .parts.contacts_social a:hover {
+  color: #541515;
+  text-shadow: 0px 3px 3px #1F1F1F;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.contacts_form {
+  margin: 80px 0px;
+}
+.contacts_form p.error {
+  text-shadow: 0px 2px 1px #262626;
+  color: #631c1c;
+  font-size: 30px;
+  text-align: center;
+}
+.contacts_form .item_line {
+  text-align: center;
+  margin-top: 2px;
+}
+.contacts_form .item_line .input {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, #282828 0%, #ff0000 50%, #282828 100%);
+  border-image: linear-gradient(to right, #282828 0%, #ff0000 50%, #282828 100%);
+  border-image-slice: 1;
+  background-color: #282828;
+  min-width: 235px;
+  height: 30px;
+}
+.contacts_form .item_line .input.message {
+  background-color: #2b2b2b;
+  min-height: 180px;
+  width: 400px;
+}
+.contacts_form .item_line textarea,
+.contacts_form .item_line input[type='text'],
+.contacts_form .item_line input[type='email'] {
+  color: #8e8e90;
+  font-size: 15px;
+  font-family: 'Vollkorn', serif;
+  padding: 10px 10px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.contacts_form .item_line textarea::-webkit-input-placeholder,
+.contacts_form .item_line input[type='text']::-webkit-input-placeholder,
+.contacts_form .item_line input[type='email']::-webkit-input-placeholder {
+  color: #666668;
+}
+.contacts_form .item_line textarea::-moz-placeholder,
+.contacts_form .item_line input[type='text']::-moz-placeholder,
+.contacts_form .item_line input[type='email']::-moz-placeholder {
+  color: #666668;
+}
+.contacts_form .item_line textarea:-moz-placeholder,
+.contacts_form .item_line input[type='text']:-moz-placeholder,
+.contacts_form .item_line input[type='email']:-moz-placeholder {
+  color: #666668;
+}
+.contacts_form .item_line textarea:-ms-input-placeholder,
+.contacts_form .item_line input[type='text']:-ms-input-placeholder,
+.contacts_form .item_line input[type='email']:-ms-input-placeholder {
+  color: #666668;
+}
+.contacts_form .item_line .submit {
+  color: #7e2d2d;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0px 2px black;
+  text-align: left;
+  margin-left: 35%;
+}
+.contacts_form .item_line .submit:hover {
+  color: #e23b3b;
 }
 /*
 Footer styles

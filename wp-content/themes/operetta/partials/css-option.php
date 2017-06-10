@@ -3,6 +3,7 @@ $ale_background = ale_get_option('background');
 $ale_headerfont = ale_get_option('headerfont');
 $ale_mainfont = ale_get_option('mainfont');
 $ale_secondfont = ale_get_option('secondfont');
+$ale_thirdfont = ale_get_option('thirdfont');
 $ale_font = ale_get_option('bodystyle');
 $ale_h1 = ale_get_option('h1sty');
 $ale_h2 = ale_get_option('h2sty');
@@ -14,7 +15,9 @@ $ale_h6 = ale_get_option('h6sty');
 <?php
     if(ale_get_option('headerfontex')){ $headerfontex = ":".ale_get_option('headerfontex'); } else {$headerfontex =""; }
     if(ale_get_option('mainfontex')){ $mainfontex = ":".ale_get_option('mainfontex'); } else {$mainfontex = "";}
-    if(ale_get_option('headerfont')){ echo "<link href='http://fonts.googleapis.com/css?family=".ale_get_option('headerfont').$headerfontex."|".ale_get_option('mainfont').$mainfontex."' rel='stylesheet' type='text/css'>"; }
+    if(ale_get_option('secondfontex')){ $secondfontex = ":".ale_get_option('secondfontex'); } else {$secondfontex =""; }
+    if(ale_get_option('thirdfontex')){ $thirdfontex = ":".ale_get_option('thirdfontex'); } else {$thirdfontex =""; }
+    if(ale_get_option('headerfont')){ echo "<link href='http://fonts.googleapis.com/css?family=".ale_get_option('headerfont').$headerfontex."|".ale_get_option('mainfont').$mainfontex."|".ale_get_option('secondfont').$secondfontex."|".ale_get_option('thirdfont').$thirdfontex."' rel='stylesheet' type='text/css'>"; }
 ?>
 <style type='text/css'>
     body {

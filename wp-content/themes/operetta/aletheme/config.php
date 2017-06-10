@@ -113,7 +113,7 @@ function aletheme_get_options() {
                         "id" => "ale_headerfontex",
                         "std" => "400,400i",
                         "type" => "text",
-                        );
+    );
     $options[] = array( "name" => "Select the body Font from Google Library",
                         "desc" => "The default Font is - Crete Round",
                         "id" => "ale_secondfont",
@@ -125,6 +125,19 @@ function aletheme_get_options() {
                         "desc" => "The default Font (extended)",
                         "id" => "ale_secondfontex",
                         "std" => "400,400i",
+                        "type" => "text",
+    );
+    $options[] = array( "name" => "Select the body Font from Google Library",
+                        "desc" => "The default Font is - Vollkorn",
+                        "id" => "ale_thirdfont",
+                        "std" => "Vollkorn",
+                        "type" => "select",
+                        "options" => $headerfont);
+
+    $options[] = array( "name" => "Select the body Font (Extended) from Google Library",
+                        "desc" => "The default Font (extended)",
+                        "id" => "ale_thirdfontex",
+                        "std" => "400",
                         "type" => "text",
     );
 
