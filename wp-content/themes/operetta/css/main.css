@@ -344,7 +344,7 @@ nav.liner_menu .ale_bodymenu li a:hover {
   color: #e23b3b;
 }
 /*
-Slider Page
+Slider Page Styles
 */
 .gallery .top_slider_line {
   border-top: 1px solid transparent;
@@ -440,7 +440,7 @@ Slider Page
   height: 1px;
 }
 /*
-Gallery Page
+Gallery Page Styles
 */
 .gallery-page .gallery-post {
   display: inline-block;
