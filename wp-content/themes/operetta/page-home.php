@@ -13,16 +13,14 @@ get_header();
                     wp_nav_menu(array(
                         'theme_location' => 'body_menu',
                         'menu'           => 'Body Menu',
-                        'menu_class'     => 'ale_bodymenu cv',
+                        'menu_class'     => 'bodymenu cv',
                         'walker'         => new Aletheme_Nav_Walker(),
                         'container'      => '',
                     ));
                 }
             ?>
         </nav>
-        <div class="nav_bottom_image">
-
-        </div>
+        <div class="nav_bottom_image"></div>
     </main>
 </section>
 

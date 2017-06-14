@@ -1,5 +1,6 @@
 <?php get_header(); global $query_string; query_posts($query_string.'&post_type=gallery&posts_per_page=-1'); ?>
     <!-- Content -->
+
     <div class="portfolio-center-align">
 
         <div class="portfolio-categories">

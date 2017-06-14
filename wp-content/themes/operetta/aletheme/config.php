@@ -43,6 +43,13 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "upload");
 
+    $options[] = array( "name" => "Insert The Slider Slug",
+                        "desc" => "Get The Slug On Sliders Settings Page.",
+                        "id" => "ale_gallerysliderslug",
+                        "std" => "",
+                        "type" => "text",
+                        );
+
     $options[] = array( 'name' => "Manage Background",
                         'desc' => "Select the background color, or upload a custom background image. Default background is the #f5f5f5 color",
                         'id' => 'ale_background',
@@ -346,38 +353,38 @@ function aletheme_get_images_sizes() {
 
         'gallery' => array(
             array(
-                'name'      => 'gallery-thumba',
-                'width'     => 430,
-                'height'    => 267,
+                'name'      => 'min-photo-size',
+                'width'     => 223,
+                'height'    => 225,
                 'crop'      => true,
             ),
             array(
-                'name'      => 'gallery-mini',
-                'width'     => 100,
-                'height'    => 67,
+                'name'      => 'middle-photo-size',
+                'width'     => 470,
+                'height'    => 225,
                 'crop'      => true,
             ),
             array(
-                'name'      => 'gallery-big',
-                'width'     => 680,
-                'height'    => 9999,
-                'crop'      => false,
-            ),
-        ),
-        'post' => array(
-            array(
-                'name'      => 'post-thumba',
-                'width'     => 475,
-                'height'    => 295,
-                'crop'      => true,
-            ),
-            array(
-                'name'      => 'post-minibox',
-                'width'     => 500,
-                'height'    => 200,
+                'name'      => 'max-photo-size',
+                'width'     => 470,
+                'height'    => 470,
                 'crop'      => true,
             ),
         ),
+//        'post' => array(
+//            array(
+//                'name'      => 'post-thumba',
+//                'width'     => 475,
+//                'height'    => 295,
+//                'crop'      => true,
+//            ),
+//            array(
+//                'name'      => 'post-minibox',
+//                'width'     => 500,
+//                'height'    => 200,
+//                'crop'      => true,
+//            ),
+//        ),
 
 
     );
