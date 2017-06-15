@@ -171,6 +171,7 @@ nav.liner_menu {
     }
   }
 }
+
 .container, .gallery {
   margin-top: 65px;
 
@@ -505,9 +506,11 @@ Gallery Page Styles
 
     a, i {
       color: #8e8e90;
+      .transition(all 300ms ease-in-out);
 
       &:hover {
         color: #fff;
+        .transition(all 300ms ease-in-out);
       }
     }
   }
@@ -531,6 +534,135 @@ Gallery Page Styles
         color: #fff;
       }
     }
+  }
+}
+
+.portfolio-single-center-align {
+  margin-top: 50px;
+  font-family: 'Vollkorn', serif;
+
+  .portfolio-single-title {
+    h2 {
+      border-bottom: 1px solid transparent;
+      -moz-border-image: -moz-linear-gradient(left, #282828 30%, #ad0101 50%, #282828 70%);
+      -webkit-border-image: -webkit-linear-gradient(left, #282828 30%, #ad0101 50%, #282828 70%);
+      border-image: linear-gradient(to right, #282828 30%, #ad0101 50%, #282828 70%);
+      border-image-slice: 1;
+      color: white;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    a {
+      color: #6f0101;
+      text-transform: capitalize;
+      .transition(all 300ms ease-in-out);
+
+      &:hover {
+        color: #ad0101;
+        .transition(all 300ms ease-in-out);
+      }
+    }
+
+    a.back {
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      margin-top: -20px;
+    }
+  }
+
+  .slides {
+    border: 15px solid #3d3d3d;
+  }
+}
+
+.gallerydescriptionbox {
+  color: #fff;
+  font-size: 15px;
+  margin: 15px 10px 60px 10px;
+
+  p {
+    text-align: center;
+  }
+}
+
+/*
+Services page Styles
+*/
+
+.services-content {
+  font-family: 'Vollkorn', serif;
+
+  .blog-item {
+    a.img-post {
+      img.attachment-post-thumba {
+        border: 10px solid #3d3d3d;
+        display: block;
+        margin: 0px auto;
+      }
+    }
+
+    a.caption {
+      color: #ad0101;
+      display: block;
+      font-size: 23px;
+      margin-top: 5px;
+
+      p.caption_title {
+        border-bottom: 1px solid transparent;
+        -moz-border-image: -moz-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+        -webkit-border-image: -webkit-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+        border-image: linear-gradient(to right, #282828 10%, #ad0101 50%, #282828 90%);
+        border-image-slice: 1;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+      }
+    }
+  }
+}
+
+.blog-single-caption {
+  font-family: 'Vollkorn', serif;
+
+  a.backblog {
+    color: #6f0101;
+    font-size: 20px;
+    text-transform: capitalize;
+    .transition(all 300ms ease-in-out);
+
+    &:hover {
+      color: #ad0101;
+      .transition(all 300ms ease-in-out);
+    }
+  }
+}
+.img_post {
+  .attachment-post-minibox {
+    border: 10px solid #3d3d3d;
+    display: block;
+    margin: 0px auto;
+  }
+}
+.text {
+  margin-top: 5px;
+
+  p {
+    border-bottom: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+    -webkit-border-image: -webkit-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+    border-image: linear-gradient(to right, #282828 10%, #ad0101 50%, #282828 90%);
+    border-image-slice: 1;
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
   }
 }
 

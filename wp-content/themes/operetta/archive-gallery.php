@@ -14,7 +14,7 @@
         }
         ?>
     </nav>
-    <div class="container contacts">
+    <div class="container archive_gallery">
         <p class="title_parag">
             <a href="#" class="page_title">
                 <?php _e('gallery','aletheme'); ?>
@@ -37,6 +37,9 @@
                 </div>
             <?php endwhile;  endif;  ?>
         </div>
+        <?php global $wp_query;
+            if ($wp_query->max_num_pages > 1) {
+        ?>
         <div class="pagination">
             <div class="left_arrow">
                 <?php
@@ -62,6 +65,7 @@
                 ?>
             </div>
         </div>
+        <?php } ?>
     </div>
 </section>
 

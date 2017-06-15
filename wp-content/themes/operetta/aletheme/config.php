@@ -371,20 +371,20 @@ function aletheme_get_images_sizes() {
                 'crop'      => true,
             ),
         ),
-//        'post' => array(
-//            array(
-//                'name'      => 'post-thumba',
-//                'width'     => 475,
-//                'height'    => 295,
-//                'crop'      => true,
-//            ),
-//            array(
-//                'name'      => 'post-minibox',
-//                'width'     => 500,
-//                'height'    => 200,
-//                'crop'      => true,
-//            ),
-//        ),
+        'post' => array(
+            array(
+                'name'      => 'post-thumba',
+                'width'     => 350,
+                'height'    => 320,
+                'crop'      => true,
+            ),
+            array(
+                'name'      => 'post-minibox',
+                'width'     => 500,
+                'height'    => 200,
+                'crop'      => true,
+            ),
+        ),
 
 
     );
