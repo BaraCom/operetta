@@ -425,6 +425,7 @@ function aletheme_get_post_types() {
                     'title',
                     'editor',
                     'thumbnail',
+                    'comments',
                 ),
                 'show_in_nav_menus'=> true,
             ),

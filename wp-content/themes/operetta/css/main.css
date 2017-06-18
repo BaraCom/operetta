@@ -339,9 +339,19 @@ nav.liner_menu .ale_bodymenu li a:hover {
   text-shadow: 0px 2px black;
   text-align: left;
   margin-left: 35%;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 .contacts_form .item_line .submit:hover {
   color: #e23b3b;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 /*
 Slider Page Styles
@@ -675,6 +685,258 @@ Services page Styles
   font-size: 18px;
   padding-bottom: 10px;
   text-align: center;
+}
+/*
+Comments styles
+*/
+.comments-container {
+  font-family: 'Vollkorn', serif;
+}
+.comments-container .depth-1 {
+  margin-top: 60px;
+}
+.comments-container .depth-1 .logo i.fa-comments-o {
+  color: #ad0101;
+  font-size: 70px;
+  margin-left: 60px;
+}
+.comments-container .depth-1 .info {
+  padding-left: 40px;
+}
+.comments-container .depth-1 .info span {
+  font-size: 15px;
+  color: #828181;
+  text-transform: capitalize;
+}
+.comments-container .depth-1 .info a.comment-reply-link {
+  color: #6f0101;
+  font-size: 15px;
+  margin-left: 25px;
+  text-transform: lowercase;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.comments-container .depth-1 .info a.comment-reply-link:hover {
+  color: #ad0101;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.comments-container .depth-1 .info i {
+  color: #6f0101;
+  font-size: 15px;
+  margin-left: 2px;
+}
+.comments-container .depth-1 .comment_data {
+  margin-top: 20px;
+}
+.comments-container .depth-1 .comment_data p {
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #282828 60%, #ad0101 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #282828 60%, #ad0101 100%);
+  border-image: linear-gradient(to bottom left, #282828 60%, #ad0101 100%);
+  border-image-slice: 1;
+  color: #fff;
+  font-size: 15px;
+  margin: 0px 40px 15px 40px;
+  padding-bottom: 5px;
+  font-style: italic;
+  text-align: center;
+}
+.comments-container .depth-1 .comment_data .comment-awaiting-moderation {
+  color: #6f0101;
+  font-size: 15px;
+}
+.comments-container .depth-2 {
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #282828 60%, #ad0101 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #282828 60%, #ad0101 100%);
+  border-image: linear-gradient(to bottom left, #282828 60%, #ad0101 100%);
+  border-image-slice: 1;
+  margin-left: 100px;
+}
+.comments-container .comment-form {
+  margin-top: 100px;
+}
+.comments-container .comment-form p {
+  color: #AD0101;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.comments-container .comment-form span.cancel_reply a {
+  color: #8e8e90;
+  margin-left: 5px;
+}
+.comments-container .comment-form p.logged {
+  color: #6f0101;
+  font-size: 15px;
+}
+.comments-container .comment-form p.logged a {
+  color: #8e8e90;
+}
+.comments-container .comment-form p.logged a.log_out {
+  color: #fff;
+  font-size: 10px;
+}
+.comments-container .comment-form .name,
+.comments-container .comment-form .email,
+.comments-container .comment-form .site {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+  -webkit-border-image: -webkit-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+  border-image: linear-gradient(to right, #282828 10%, #ad0101 50%, #282828 90%);
+  border-image-slice: 1;
+  background: #282828;
+  color: #8e8e90;
+  display: block;
+  font-family: inherit;
+  font-size: 15px;
+  margin: 2px auto 0px auto;
+  min-width: 200px;
+  text-align: center;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.comments-container .comment-form .name::-webkit-input-placeholder,
+.comments-container .comment-form .email::-webkit-input-placeholder,
+.comments-container .comment-form .site::-webkit-input-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .name::-moz-placeholder,
+.comments-container .comment-form .email::-moz-placeholder,
+.comments-container .comment-form .site::-moz-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .name:-moz-placeholder,
+.comments-container .comment-form .email:-moz-placeholder,
+.comments-container .comment-form .site:-moz-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .name:-ms-input-placeholder,
+.comments-container .comment-form .email:-ms-input-placeholder,
+.comments-container .comment-form .site:-ms-input-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .comment_message {
+  margin-top: 2px;
+}
+.comments-container .comment-form .comment_message .message {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+  -webkit-border-image: -webkit-linear-gradient(left, #282828 10%, #ad0101 50%, #282828 90%);
+  border-image: linear-gradient(to right, #282828 10%, #ad0101 50%, #282828 90%);
+  border-image-slice: 1;
+  background: #282828;
+  color: #8e8e90;
+  display: block;
+  font-family: inherit;
+  font-size: 15px;
+  margin: 0px auto;
+  width: 600px;
+  min-height: 150px;
+  text-align: center;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.comments-container .comment-form .comment_message .message::-webkit-input-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .comment_message .message::-moz-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .comment_message .message:-moz-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .comment_message .message:-ms-input-placeholder {
+  color: #666668;
+}
+.comments-container .comment-form .comment_submit {
+  margin-top: 5px;
+}
+.comments-container .comment-form .comment_submit .submit {
+  color: #7e2d2d;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  text-shadow: 0px 2px black;
+  text-align: left;
+  margin-right: 25%;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.comments-container .comment-form .comment_submit .submit:hover {
+  color: #e23b3b;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.comments-container {
+  font-family: 'Vollkorn', serif;
+}
+.comments-container .comments-closed {
+  color: #666668;
+  font-size: 20px;
+  text-align: center;
+}
+.blog-single-footer {
+  margin: 30px 0px;
+}
+.blog-single-footer .right,
+.blog-single-footer .left {
+  font-family: 'Vollkorn', serif;
+}
+.blog-single-footer .right a,
+.blog-single-footer .left a {
+  color: #6f0101;
+  font-size: 20px;
+  float: right;
+  text-transform: capitalize;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.blog-single-footer .right a:hover,
+.blog-single-footer .left a:hover {
+  color: #ad0101;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.blog-single-footer .right a::after,
+.blog-single-footer .left a::after {
+  content: '\f061';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  margin-left: 10px;
+}
+.blog-single-footer .left a {
+  float: left;
+}
+.blog-single-footer .left a::before {
+  content: '\f060';
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  margin-right: 10px;
+}
+.blog-single-footer .left a::after {
+  content: '';
 }
 /*
 Footer styles

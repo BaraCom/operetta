@@ -140,32 +140,32 @@ function aletheme_comment_default($comment, $args, $depth) {
         <div class="comment2">
             <div class="response"></div>
     <?php } else { ?>
-        <div class="comment1">
+        <div class="comment1 cf">
     <?php } ?>
-
-        <div class="img">
-            <?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-        </div>
-        <div class="content">
-            <p class="time"><?php printf( __('%1$s at %2$s','aletheme'), get_comment_date(),  get_comment_time()) ?></p>
-            <p class="name"><?php printf(__('%s','aletheme'), get_comment_author_link()) ?></p>
-            <div class="text">
+            <div class="comment_info">
+                <div class="logo">
+                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                </div>
+                <div class="info">
+                    <span class="name"><?php printf(__('%s','aletheme'), get_comment_author_link()) ?></span>
+                    <?php if($depth == 1){ ?>
+                            <a class="respond">
+                                <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                            </a>
+                    <?php } ?>
+                    <br />
+                    <span class="time"><?php printf( __('%1$s at %2$s','aletheme'), get_comment_date(),  get_comment_time()) ?></span>
+                </div>
+            </div>
+            <div class="comment_data">
                 <?php if ($comment->comment_approved == '0') : ?>
                     <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.','aletheme') ?></em>
                     <br />
-                <?php endif; ?>
-                <?php comment_text() ?>
+                    <?php endif; ?>
+                    <?php comment_text() ?>
             </div>
-            <?php if($depth == 1){ ?><a class="respond"><span class="icon"></span><?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></a><?php } ?>
         </div>
-        <?php if ($depth > 1) { ?>
-            <div class="line-small"></div>
-        <?php } else { ?>
-            <div class="line"></div>
-        <?php } ?>
-
-        <div class="cf"></div>
-    </div>
     <?php if ( 'div' != $args['style'] ) : ?>
 		</div>
 		<?php endif; ?>
